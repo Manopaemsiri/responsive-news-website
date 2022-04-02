@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+/* ===================================
+              HEADER 
+   =================================== */
+
+#header {
+    width: 100%;
+    padding: 100px 0px 100px;
+    background: #242424;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    color: #fff;
+    font-size: 64px;
+    letter-spacing: 2px;
+}
+
+#header p {
+    color: gray;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+/* ===================================
+              MENU 
+   =================================== */
+
+nav {
+    z-index: 3;
+    background: #000;
+    transition: .5s;
+}
+
+nav ul {
+    padding: 20px 0px 20px 50px;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+.nav-active {
+    color: #538167;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* ===================================
+              ROW STYLE 
+   =================================== */
+
+.row {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}   
+
+.leftcolumn {
+    float: left;
+    width: 70%;
+}
+
+.rightcolumn {
+    float: left;
+    width: 30%;
+    padding-left: 20px;
+}
+
+/* ===================================
+              IMAGE STYLE 
+   =================================== */
+
+.image-preview img,
+.image-preview-line img {
+    width: 100%; 
+}
+
+/* ===================================
+              HELP OTHER
+   =================================== */
+
+.card,
+.search,
+.sign-up {
+    height: auto;
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+   
+.image-preview {
+    width: 100%;
+    height: auto;
+}
+   
+.image-preview-line {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ededed;
+    line-height: 2;
+}
+
+p.about-desc,
+p.sign-desc {
+    color: #999;
+    font-family: 'Raleway', sans-serif;
+    line-height: 2;
+}
+
+/* ===================================
+              LEFTCOLUMN STYLE 
+   =================================== */
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 44px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.title  {
+    line-height: 2;
+}
+
+.title p {
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: gray;
+}
+
+p.desc {
+    font-size: 16px;
+    color: #444;
+    font-family: 'Raleway', sans-serif;
+    line-height: 2;
+}
+
+a.more-link {
+    display: flex;
+    justify-content: flex-end;
+    color: #333;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a.more-link:hover {
+    text-decoration: underline;
+}
+
+.next-page {
+    margin-top: 20px;
+    padding: 20px 20px 20px 0px;
+}
+
+.next-page .active {
+    background: #333;
+    color: #fff;
+}
+
+.next-page ul {
+    padding-left: 0;
+}
+
+.next-page ul li {
+    display: inline-block;
+}
+
+.next-page ul li a {
+    background: #fff;
+    padding: 20px;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+/* ===================================
+        RIGHTCOLUMN STYLE END
+   =================================== */
+
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+h4 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+}
+
+h4 a {
+    color: #333;
+    text-decoration: none;
+}
+
+input#s {
+    background: #eee;
+    border: none;
+    height: 34px;
+    font-size: 15px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+input#btn {
+    border: 0;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    background: #538167;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+
+input#s:focus,
+input#btn:focus {
+    outline: none;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    opacity: 0.9;
+}
+
+.text-block {
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    padding: 40px;
+    line-height: 2;
+}
+
+.text-block a i {
+    padding-left: 10px;
+}
+
+.text-block a , 
+.text-block p {
+    color: #fff; 
+    font-family: 'Raleway', sans-serif;
+}
+
+.tag-list {
+    line-height: 2.5;
+}
+
+.tag-list a {
+    padding: 10px;
+    font-size: 12px;
+    background: #538167;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.tag-list a:hover {
+    text-decoration: underline;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 30px;
+    color: #bbb;
+    width: 100%;
+    background: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+@media (max-width: 576px) {
+
+    .row {
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+
+    .card {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    #about {
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .title {
+        line-height: normal;
+    }
+
+    p.desc {
+        font-size: 14px;
+    }
+
+    a.more-link {
+        font-size: 16px;
+    }
+}
+
